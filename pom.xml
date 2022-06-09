@@ -78,6 +78,12 @@
 				<sonar.host.url>
 					http://localhost:9000
 				</sonar.host.url>
+				<sonar.login>
+					admin
+				</sonar.login>
+				<sonar.password>
+					admin
+				</sonar.password>
 			</properties>
 		</profile>
 	</profiles>
@@ -88,15 +94,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.codehaus.sonar</groupId>
-					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.2</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 	<distributionManagement>
 		<snapshotRepository>
