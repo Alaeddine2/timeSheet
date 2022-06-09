@@ -3,6 +3,8 @@ package tn.esprit.spring.controller;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -29,7 +31,8 @@ import tn.esprit.spring.services.ITimesheetService;
 @RestController
 public class RestControlEmploye {
 
-	
+	private static final Logger logger = LogManager.getLogger(RestControlEmploye.class);
+
 	@Autowired
 	IEmployeService iemployeservice;
 	@Autowired
@@ -45,6 +48,7 @@ public class RestControlEmploye {
 	@ResponseBody
 	public Employe ajouterEmploye(@RequestBody Employe employe)
 	{
+		logger.info("Add new Employee");
 		iemployeservice.ajouterEmploye(employe);
 		return employe;
 	}
@@ -115,7 +119,7 @@ public class RestControlEmploye {
     @GetMapping(value = "getNombreEmployeJPQL")
     @ResponseBody
 	public int getNombreEmployeJPQL() {
-		
+		logger.info("executing employee Nb");
 		return iemployeservice.getNombreEmployeJPQL();
 	}
 
@@ -123,7 +127,7 @@ public class RestControlEmploye {
     @GetMapping(value = "getAllEmployeNamesJPQL")
     @ResponseBody
 	public List<String> getAllEmployeNamesJPQL() {
-		
+		logger.info("Getting employees names");
 		return iemployeservice.getAllEmployeNamesJPQL();
 	}
 
@@ -177,7 +181,7 @@ public class RestControlEmploye {
 	@GetMapping(value = "/getAllEmployes")
     @ResponseBody
 	public List<Employe> getAllEmployes() {
-		
+		logger.info("getting employees");
 		return iemployeservice.getAllEmployes();
 	}
 
