@@ -1,0 +1,17 @@
+
+[
+java:S46841"@Replace this persistent entity with a simple POJO or DTO object.(ŒÅ¡Áüÿÿÿÿ
+Q	java:S125-"<This block of commented-out lines of code should be removed.(çŽêì
+V
+java:S4684R"@Replace this persistent entity with a simple POJO or DTO object.(‰¸à
+V	java:S125O"<This block of commented-out lines of code should be removed.(ËŠÕÖýÿÿÿÿ
+I
+java:S1135®"2Complete the task associated to this TODO comment.(…ïœ†
+Z
+java:S1128	"?Remove this unused import 'org.springframework.http.MediaType'.(úŸÝ¯þÿÿÿÿ
+i
+java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë
+m
+java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™Ðÿûÿÿÿÿ
+l
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ
