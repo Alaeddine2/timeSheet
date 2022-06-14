@@ -48,7 +48,6 @@ public class RestControlEmploye {
 	@ResponseBody
 	public Employe ajouterEmploye(@RequestBody Employe employe)
 	{
-		//new log added log4J
 		logger.info("Add new Employee");
 		iemployeservice.ajouterEmploye(employe);
 		return employe;
