@@ -39,11 +39,17 @@ public class RestControlEmployeTest {
         assertThat(savedEmployeeId).isGreaterThan(-1);
     }
 
-    @Test
+    /*@Test
     public void getAllEmployes() {
         logger.info("starting getting all employees test");
         List<Employe> employees = employeeService.getAllEmployes();
-        assertNotEquals(-1, employees.size());
-        System.out.println(employees);
+        /*assertNotEquals(-1, employees.size());*/
+        /*System.out.println(employees);
     }
+
+    @Test
+    public void getEmployePrenomById() {
+        String prenom = employeeService.getEmployePrenomById(2);
+        System.out.println(prenom);
+    }*/
 }

@@ -104,7 +104,6 @@ public class RestControlEmploye {
 	@ResponseBody 
 	public void deleteEmployeById(@PathVariable("idemp")int employeId) {
 		iemployeservice.deleteEmployeById(employeId);
-		
 	}
     
  // URL : http://localhost:8081/SpringMVC/servlet/deleteContratById/2
