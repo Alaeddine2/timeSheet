@@ -60,7 +60,7 @@ public class Employe implements Serializable {
 	private List<Timesheet> timesheets;
 	
 	
-	public Employe() {
+	public Employe(String mehrez, String folen, String email, boolean isActif, String ingenieur) {
 		super();
 	}
 	
