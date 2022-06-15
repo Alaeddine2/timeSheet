@@ -113,7 +113,7 @@ public class RestControlEmploye {
 		iemployeservice.deleteContratById(contratId);
 	}
 
-    
+    ///
     // URL : http://localhost:8081/SpringMVC/servlet/getNombreEmployeJPQL/
     @GetMapping(value = "getNombreEmployeJPQL")
     @ResponseBody
