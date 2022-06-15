@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class RestControlEmployeTest {
-
+    //Logger declaration
     private static final Logger logger = LogManager.getLogger(RestControlEmployeTest.class);
 
     @Autowired
@@ -45,11 +45,5 @@ public class RestControlEmployeTest {
         List<Employe> employees = employeeService.getAllEmployes();
         /*assertNotEquals(-1, employees.size());*/
         /*System.out.println(employees);
-    }
-
-    @Test
-    public void getEmployePrenomById() {
-        String prenom = employeeService.getEmployePrenomById(2);
-        System.out.println(prenom);
     }*/
 }
