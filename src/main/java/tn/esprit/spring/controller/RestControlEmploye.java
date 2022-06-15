@@ -114,7 +114,7 @@ public class RestControlEmploye {
 	}
 
     
-    // URL : http://localhost:8081/SpringMVC/servlet/getNombreEmployeJPQL
+    // URL : http://localhost:8081/SpringMVC/servlet/getNombreEmployeJPQL/
     @GetMapping(value = "getNombreEmployeJPQL")
     @ResponseBody
 	public int getNombreEmployeJPQL() {
